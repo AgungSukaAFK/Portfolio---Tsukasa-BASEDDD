@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+#AOTSUKASA {
+  font-family: "Dancing Script", cursive;
+}
+
+/* @font-face {
+    font-family: "Hello Doctor";
+    src: url(./../dist/Hello\ Doctor.otf)
+}
+
+.testing {
+    font-family: "Hello Doctor";
+} */
+
+.hamburger-strip {
+  @apply block w-[30px] h-[3px] rounded-2xl bg-hamburger mb-2 transition duration-300 origin-left;
+}
+
+/* card project */
+.card-projects {
+  @apply relative w-[80%] max-w-md h-full shadow-lg lg:max-w-xl hover:shadow-cyan-500/50;
+}
+
+.project-img {
+  @apply aspect-[16/10] object-cover;
+}
+
+.project-preview-btn-container {
+  @apply absolute block w-full h-full top-0 bg-gradient-to-t from-slate-900/90 from-20% to-white/0;
+}
+
+.project-preview-btn {
+  @apply bg-green-600 w-auto rounded-br-xl py-1 px-2 text-start lg:text-2xl lg:py-2;
+}
+
+.project-preview-caption-container {
+  @apply px-4 absolute block w-full h-[30%] bottom-0 overflow-hidden;
+}
+
+.project-preview-text {
+  @apply text-xl font-bold mb-1 lg:text-4xl;
+}
+
+.project-preview-desc {
+  @apply mt-2 text-base lg:text-xl;
+}
+/* Akhir card project */
+
+.my-1 a {
+  font-weight: 500;
+  color: darkslategray;
+}
+
+.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+input,
+textarea {
+  @apply border-b-2 border-slate-800 rounded-sm w-full p-1 m-0;
+}
+
+label {
+  @apply inline-block w-[80px];
+}

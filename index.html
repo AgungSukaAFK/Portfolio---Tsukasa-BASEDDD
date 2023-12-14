@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id, in">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Ayaya</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="w-full">
+      <div
+        id="content"
+        class="min-h-screen bg-pink-200 relative flex flex-col items-center justify-center"
+      >
+        <!-- Bagian Navbar -->
+        <header
+          class="absolute flex w-full h-20 top-0 z-10 bg-pink-100 bg-opacity-40 shadow-md"
+        >
+          <div
+            class="logo w-48 pr-6 h-full flex items-center justify-end lg:pr-0 lg:w-60"
+          >
+            <h2
+              id="AOTSUKASA"
+              class="text-2xl font-bold text-green-700 lg:text-3xl"
+            >
+              Agung Maulana
+            </h2>
+          </div>
+          <div
+            class="flex flex-row justify-end items-center pr-4 ml-auto w-40 h-[80%] my-auto lg:w-full"
+          >
+            <div class="relative lg:w-full xl:max-w-[70%]">
+              <button id="hamburger" class="hover:drop-shadow-md lg:hidden">
+                <span class="hamburger-strip"></span>
+                <span class="hamburger-strip"></span>
+                <span class="hamburger-strip"></span>
+              </button>
+              <nav
+                id="navigation"
+                class="hidden absolute right-10 top-0 w-40 h-auto py-2 bg-pink-100 bg-opacity-70 rounded-lg shadow-md border-r-4 border-green-600 flex-col justify-between lg:flex-row lg:flex lg:border-none lg:-top-7 lg:w-[60%] lg:px-10 lg:bg-opacity-0 lg:shadow-none"
+              >
+                <button class="my-1">
+                  <a href="">Tentang Saya</a>
+                </button>
+                <button class="my-1">
+                  <a href="">Projects</a>
+                </button>
+                <!-- <button class="my-1">
+                                <a href="">Blog</a>
+                            </button> -->
+                <button class="my-1">
+                  <a href="">Kontak</a>
+                </button>
+                <button class="my-1">
+                  <a href="">My CV</a>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        <!-- Bagian Hero -->
+        <div
+          id="hero"
+          class="container mx-auto mt-10 flex flex-col justify-center text-center lg:px-60 lg:flex-row lg:flex-wrap md:mt-0"
+        >
+          <!-- // buletan -->
+          <span
+            class="absolute -top-28 -left-10 -z-0 w-60 h-80 rounded-full border-4 shadow-xl blur-sm border-white"
+          ></span>
+          <div
+            id="hero-text"
+            class="flex items-center justify-center flex-col w-full p-8 lg:w-1/2"
+          >
+            <h3 class="text-lg md:text-2xl">Welcome to,</h3>
+            <h1 class="text-4xl md:text-5xl">Agung's</h1>
+            <p class="text-base mt-2 md:text-xl">Personal Website</p>
+          </div>
+          <div id="hero-image" class="w-full lg:w-1/2">
+            <img
+              src="dist/img/Tsukasa.jpg"
+              alt="Tsukasa Image"
+              class="mx-auto w-56 rounded-full shadow-2xl md:w-72"
+            />
+          </div>
+          <p class="w-[80%] mt-8 mx-auto text-xl lg:text-2xl lg:max-w-lg">
+            Seorang <span class="font-bold">mahasiswa</span> penuh semangat dan
+            <span class="font-bold">passion</span> di bidang
+            <span class="font-bold">programming</span>. Saya biasa menulis kode
+            menggunakan
+            <span class="font-bold text-yellow-500">JavaScript</span>,
+            <span class="font-bold text-yellow-500">Py</span
+            ><span class="font-bold text-blue-500">thon</span>,
+            <span class="font-bold text-blue-500">VB .NET</span>, dan lebih
+            banyak lagi.
+          </p>
+        </div>
+      </div>
+      <img src="dist/svg/wavesOpacity.svg" alt="Svg" class="w-full h-[70px]" />
+
+      <!-- Bagian about / ada cv data diri singkat dan sertifikasi -->
+      <div id="about" class="w-full h-auto pt-5">
+        <h1
+          class="underline text-center text-4xl font-bold mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Tentang Saya
+        </h1>
+        <div
+          class="about-text flex flex-col justify-evenly md:flex-row items-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-once="true"
+        >
+          <div class="w-0 md:w-[10%]"></div>
+          <p class="block w-[80%] md:w-[30%] text-justify md:text-xl">
+            Selamat datang! Perkenalkan nama saya Agung, seorang mahasiswa yang
+            memiliki minat mendalam di dunia programming. Kegemaran saya
+            terletak pada coding, eksplorasi ide-ide baru, dan menciptakan
+            solusi kreatif melalui pemrograman. Saat ini, saya tengah menempuh
+            pendidikan sebagai seorang mahasiswa, tetapi semangat saya dalam
+            mengembangkan keterampilan programming terus berkembang. Saya
+            memiliki fokus khusus dalam bidang IT, dengan kecenderungan yang
+            kuat pada web programming dan game development.
+          </p>
+          <div class="h-6 md:h-0"></div>
+          <p class="block w-[80%] md:w-[30%] text-justify md:text-xl">
+            Lebih dari sekadar hobi, bagi saya ngoding/programming sudah seperti
+            bagian dari diri. Saya menikmati tantangan untuk menciptakan
+            aplikasi yang inovatif dan membuat pengalaman yang memikat. Dengan
+            semangat belajar yang tinggi dan tekad untuk berkembang, saya
+            berusaha untuk menjadi seorang developer yang handal dan
+            berkontribusi positif dalam industri IT. Jika ada informasi tambahan
+            atau pertanyaan yang ingin diajukan, silakan jangan ragu untuk
+            menghubungi saya. Saya senang dapat berbagi pengalaman dan ide
+            dengan orang lain
+          </p>
+          <div class="w-0 md:w-[10%]"></div>
+        </div>
+        <div class="w-[80%] mx-auto mt-8 md:w-[67%]">
+          <h2
+            class="font-bold text-xl font-sans md:text-2xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Sertifikasi
+          </h2>
+          <div
+            class="flex flex-col mt-3 gap-5 pb-3 overflow-x-auto overflow-y-hidden w-full md:flex-row"
+            id="sertifikasi"
+          >
+            <div
+              class="card-cert border-4 w-full border-b-slate-500 border-r-slate-500 bg-blue-500 h-auto max-h-full md:text-xl md:min-w-[30%] md:w-[30%]"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              <img src="./dist/img/fcc-frontend-cert.png" alt="Cert Image" />
+              <p class="inline-block w-full p-2 text-white font-semibold">
+                Fcc Javascript and Algorithms Certification
+              </p>
+            </div>
+
+            <div
+              class="card-cert border-4 w-full border-b-slate-500 border-r-slate-500 bg-blue-500 h-auto max-h-full md:text-xl md:min-w-[30%] md:w-[30%]"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              <img src="./dist/img/fcc-backend-cert.png" alt="Cert Image" />
+              <p class="inline-block w-full p-2 text-white font-semibold">
+                Fcc Back End Develpoment and APIs Certification
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir About -->
+
+      <!-- Awal Project -->
+      <div
+        class="w-full h-auto mt-12 py-7 bg-slate-800 text-white"
+        id="projects"
+      >
+        <h1 class="underline text-4xl font-bold text-center mb-8">Projects</h1>
+
+        <div
+          class="flex flex-col flex-wrap items-center justify-start gap-10 p-0 lg:flex-row lg:justify-evenly lg:items-start lg:gap-y-12 lg:p-8"
+          id="koleksi"
+        >
+          <!-- Buat 6 cards -->
+          <!-- 
+                    Projects:
+                    - game suit
+                    - My Blog (Bikin dulu :v)
+                    - global chat (Bikin dulu)
+                    - agungomdb
+                    - technical documentation
+                    - old portfolio
+                 -->
+
+          <div
+            class="card-projects"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-delay="0"
+            style="transition: 0.3s"
+          >
+            <img
+              class="project-img"
+              src="./dist/img/gamesuit.png"
+              alt="gambar ajah"
+            />
+            <div class="project-preview-btn-container">
+              <button
+                id="project-button"
+                href="https://bit.ly/gamesuit"
+                target="_blank"
+                class="project-preview-btn"
+                onclick="navigateToUrl('https://bit.ly/gamesuit')"
+              >
+                preview 🗿
+              </button>
+            </div>
+            <div class="project-preview-caption-container">
+              <h1 class="project-preview-title">Game suit</h1>
+              <hr />
+              <p class="project-preview-desc">
+                HTML, CSS, JavaScript, Bootstrap
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card-projects"
+            data-aos="fade-up"
+            data-aos-duration="1300"
+            data-aos-once="true"
+            data-aos-delay="0"
+            style="transition: 0.3s"
+          >
+            <img
+              class="project-img"
+              src="./dist/img/omdb.png"
+              alt="gambar ajah"
+            />
+            <div class="project-preview-btn-container">
+              <button
+                id="project-button"
+                class="project-preview-btn"
+                onclick="navigateToUrl('https://bit.ly/https://agung-db-movie.vercel.app/')"
+              >
+                preview 🗿
+              </button>
+            </div>
+            <div class="project-preview-caption-container">
+              <h1 class="project-preview-title">OMDB API Simple Client</h1>
+              <hr />
+              <p class="project-preview-desc">HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+
+          <div
+            class="card-projects"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+            data-aos-once="true"
+            data-aos-delay="0"
+            style="transition: 0.3s"
+          >
+            <img
+              class="project-img"
+              src="./dist/img/docs.png"
+              alt="gambar ajah"
+            />
+            <div class="project-preview-btn-container">
+              <button
+                id="project-button"
+                class="project-preview-btn"
+                onclick="navigateToUrl('https://agungsukaafk.github.io/DokumentasiVirtualBox/')"
+              >
+                preview 🗿
+              </button>
+            </div>
+            <div class="project-preview-caption-container">
+              <h1 class="project-preview-title">Technical Documentation</h1>
+              <hr />
+              <p class="project-preview-desc">HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+
+          <div
+            class="card-projects"
+            data-aos="fade-up"
+            data-aos-duration="1900"
+            data-aos-once="true"
+            data-aos-delay="0"
+            style="transition: 0.3s"
+          >
+            <img
+              class="project-img"
+              src="./dist/img/chatapi.png"
+              alt="gambar ajah"
+            />
+            <div class="project-preview-btn-container">
+              <button
+                id="project-button"
+                class="project-preview-btn"
+                onclick="navigateToUrl('https://github.com/AgungSukaAFK/chat-api-agung')"
+              >
+                Repo 🗿
+              </button>
+            </div>
+            <div class="project-preview-caption-container">
+              <h1 class="project-preview-title">Chat Rest API</h1>
+              <hr />
+              <p class="project-preview-desc">
+                NodeJS, Express, MongoDB, Express-session
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card-projects"
+            data-aos="fade-up"
+            data-aos-duration="2100"
+            data-aos-once="true"
+            data-aos-delay="0"
+            style="transition: 0.3s"
+          >
+            <img
+              class="project-img"
+              src="./dist/img/chatapi.png"
+              alt="gambar ajah"
+            />
+            <div class="project-preview-btn-container">
+              <button
+                id="project-button"
+                class="project-preview-btn"
+                onclick="navigateToUrl('https://github.com/AgungSukaAFK/chat-api-agung')"
+              >
+                Repo 🗿
+              </button>
+            </div>
+            <div class="project-preview-caption-container">
+              <h1 class="project-preview-title">Whatsapp Client (Bot)</h1>
+              <hr />
+              <p class="project-preview-desc">NodeJS, Wwebjs, FFMPEG Lib</p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <!-- Akhir Project -->
+
+      <!-- Bagian Kontak -->
+      <div id="kontak" class="mt-8 px-4">
+        <h1
+          class="text-4xl text-center font-bold text-yellow-600 underline"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Kontak
+        </h1>
+        <div
+          class="container-kontak p-0 w-full flex flex-col md:flex-row md:justify-center md:gap-8"
+        >
+          <div
+            class="kontak__form w-full flex text-base flex-col items-center p-6 md:text-lg md:w-[40%] md:max-w-[400px] lg:w-[40%] lg:max-w-[800px] lg:text-xl"
+          >
+            <form id="formEmail" action="" class="w-full flex flex-col gap-5">
+              <div>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div>
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="h-[4em]"
+                ></textarea>
+              </div>
+
+              <div>
+                <button
+                  id="btn-email"
+                  type="submit"
+                  class="block mx-auto w-fit py-2 px-4 font-semibold bg-green-600 text-slate-100 rounded-md"
+                >
+                  Send email
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="kontak__sosial w-full text-base flex flex-col items-center p-6 md:text-lg md:w-[30%] lg:text-xl"
+          >
+            <div class="sosial__container w-full">
+              <h1 class="text-lg font-semibold">Email saya</h1>
+              <p>wismaagung2@gmai.com</p>
+              <h1 class="mt-6 text-lg font-semibold">Domisili</h1>
+              <p>Kota Serang,</p>
+              <p>Provinsi Banten.</p>
+              <h1 class="mt-6 text-lg font-semibold">Sosial media</h1>
+              <div
+                class="sosmed mt-2 flex flex-row justify-between w-full lg:w-[70%] max-w-[200px]"
+              >
+                <!-- github svg -->
+                <a href="https://www.github.com/agungsukaafk" target="_blank">
+                  <img
+                    src="./dist/svg/github.svg"
+                    alt="github icon"
+                    class="w-9 h-8"
+                  />
+                </a>
+                <a href="https://www.instagram.com/ao.gung/" target="_blank">
+                  <img
+                    class="w-8 h-8"
+                    src="./dist/svg/instagram.svg"
+                    alt="instagram"
+                  />
+                </a>
+                <a href="https://wa.me/6285217117840" target="_blank">
+                  <img
+                    class="w-8 h-8"
+                    src="./dist/svg/whatsapp.svg"
+                    alt="whatsapp"
+                  />
+                </a>
+                <a
+                  href="https://web.facebook.com/agung.maulana.39904?locale=id_ID"
+                  target="_blank"
+                >
+                  <img
+                    class="w-8 h-8"
+                    src="./dist/svg/facebook.svg"
+                    alt="facebook"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Bagian Kontak -->
+
+      <!-- FOOTER -->
+      <div
+        class="footer mt-4 w-full h-auto py-5 bg-blue-950 text-slate-200 font-bold text-center"
+      >
+        <p>Created by Agung 2023</p>
+      </div>
+      <!-- AKHIR FOOTER -->
+    </div>
+    <!-- Bagian add script -->
+    <script src="dist/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
